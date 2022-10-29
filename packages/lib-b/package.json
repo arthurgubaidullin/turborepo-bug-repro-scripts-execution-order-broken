@@ -1,0 +1,20 @@
+{
+  "name": "lib-b",
+  "version": "0.0.0",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "deploy": "cp -R . ../../deploy/b"
+  },
+  "dependencies": {
+    "lib-a": "*"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "*",
+    "tsconfig": "*",
+    "typescript": "^4.5.2"
+  }
+}
